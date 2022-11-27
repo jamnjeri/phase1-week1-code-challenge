@@ -1,6 +1,6 @@
 /*Phase 1, Week One Code Challenge*/
 
-//Challenge 1: Student Grade Generator (Toy Problem)
+//Challenge 1: Student Grade Generator 
 
 //Prompt user to input student marks between 0-100
 let studentMarks;
@@ -43,3 +43,39 @@ else if (studentMarks > 0 && studentMarks <=100) {
 else {
   console.log(`Value entered is not a number`)
 }
+
+
+//Challenge 2:  Speed Detector 
+//Write a program to monitor speed of vehicle
+//Speed < 70km/h --> "okay"
+//Speed > 70km/h --> demerits: 1 demerit for every 5km/h
+//More than 12 demerits --> "License suspended"
+
+function speedDetector(speedOfVehicle){
+    let demerits;
+    //Speed is a scalar quantity hence only has magnitude not direction
+    speedOfVehicle = Math.abs(speedOfVehicle)
+    console.log(`Speed = ${speedOfVehicle} km/h`)
+    
+    if (speedOfVehicle <= 70){
+      console.log("Ok")
+    }
+    else if (speedOfVehicle > 70){
+        //console.log("Speed above 70")
+        demerits = Math.floor((speedOfVehicle -70)/5)
+        console.log(`Demerit Points: ${demerits}`)
+        if (demerits > 12){
+            console.log("License Suspended")
+        }
+        else{
+            console.log(`Demerit Points: ${demerits}`)
+        }
+    }
+}
+
+
+  //Challenge 3: Net Salary Calculator 
+  //Write a program to calculate an individual's Net Salary 
+  //By getting the inputs of basic salary and benefits.
+  //Calculate the payee(i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary and net salary
+  //NB: Use KRA, NHIF and NSSF values provided in the given links 
