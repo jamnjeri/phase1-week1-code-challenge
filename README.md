@@ -1,5 +1,6 @@
 # Week1 : Code Challenge
 ## A. Description:
+
 ## B. Requirements:
 1. Create a repository on your GitHub account.
 2. Use Javascript to write down the solution.
