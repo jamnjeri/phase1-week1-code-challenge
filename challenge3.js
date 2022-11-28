@@ -3,6 +3,18 @@
   //By getting the inputs of basic salary and benefits.
   //Calculate the payee(i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary and net salary
   //NB: Use KRA, NHIF and NSSF values provided in the given links 
+
+
+  // Step 1: Get the basicSalary
+  // Step 2: Get the NSSF Monthlly Rates (Fixed at 400 according to Old Rates)
+  // Step 3: Calculate Taxable Income (Taxable Income = Basic Salary - NSSF)
+  // Step 4: Calculate P.A.Y.E (According to aren P.A.Y.E table)
+  // Step 5: Calculate NHIF from NHIF rates
+  // Step 6: Calculate NHIF Relief (15% of NHIF)
+  // Step 7: Calculate Total Deductions
+  // Step 8: Calculate Net Salary
+
+  
   let basicIncome;
   let taxableIncome;
   let totalDeductions;
