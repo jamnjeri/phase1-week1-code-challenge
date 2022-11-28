@@ -72,6 +72,7 @@ function speedDetector(speedOfVehicle){
         }
     }
 }
+speedDetector(80)
 
 
   //Challenge 3: Net Salary Calculator 
