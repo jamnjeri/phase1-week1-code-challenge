@@ -75,14 +75,16 @@ function speedDetector(speedOfVehicle){
 speedDetector(80)
 
 
-   //Challenge 3: Net Salary Calculator 
+//Challenge 3: Net Salary Calculator 
   //Write a program to calculate an individual's Net Salary 
   //By getting the inputs of basic salary and benefits.
   //Calculate the payee(i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary and net salary
   //NB: Use KRA, NHIF and NSSF values provided in the given links 
 let basicIncome;
 let taxableIncome;
+let totalExemption;
 let totalDeductions;
+let grossIncome;
 let duration;
 
 let payeTotal;
@@ -95,7 +97,7 @@ let netPay;
 //Function to get basic salary from user
 function basicSalaryEntry(){
   //Request for entry of salary
-  basicIncome = Math.abs(parseInt(prompt ("Kindly enter your Basic Salary: ")))
+  basicIncome = parseInt(prompt ("Kindly enter your Basic Salary: "))
   //Check if it's monthly or yearly
   let durationOne = prompt (`Is the entered income earned monthly? (yes/no):`)
   duration = durationOne.toLowerCase();
@@ -126,7 +128,7 @@ function calculateTaxablePay(basicIncome){
 function monthlyPAYE(monthlyTaxablePay){
   //Range 1 (First 24,000)
   if (monthlyTaxablePay > 0 && monthlyTaxablePay <=24000){
-    payeTotal = 0.1 * monthlyTaxablePay;
+    let payeTotal = 0.1 * monthlyTaxablePay;
     
     console.log(payeTotal);
     return payeTotal;
@@ -161,10 +163,8 @@ function monthlyPAYE(monthlyTaxablePay){
   }
   else {
     console.log("Not in range")
-    payeTotal = 0;
-    return payeTotal;
   }
-  //return payeTotal
+  return payeTotal
 }
 
 //Calculate NHIF deductions
@@ -222,7 +222,6 @@ function nhifDeductions(basicSalary){
   }
   else {
     console.log("Value outside range.")
-    
   }
 console.log(nhifFinalDeduction);
 return nhifFinalDeduction
@@ -239,16 +238,8 @@ function calculateNhifRelief(nhifFinalDeduction){
 //Total deductions = P.A.Y.E - NHIF Relief - Personal Relief
 function totalDeductionsCalculation(payeTotal, nhifRelief, personalRelief){
   totalDeductions = payeTotal - nhifRelief - personalRelief;
-  console.log(`Check ${totalDeductions} = ${payeTotal} - ${nhifRelief} - ${personalRelief}`)
-  if (totalDeductions <=0){
-  totalDeductions = 0;
   console.log(totalDeductions);
-  return totalDeductions
-  }
-  else {
-  console.log(totalDeductions);
-  return totalDeductions
-  }
+  return(totalDeductions)
 }
 
 //Calculate Final Pay
@@ -256,7 +247,7 @@ function totalDeductionsCalculation(payeTotal, nhifRelief, personalRelief){
 function finalPay(taxableIncome, totalDeductions, nhifFinalDeduction){
   netPay = taxableIncome - totalDeductions - nhifFinalDeduction;
   console.log(netPay);
-  return netPay
+  return (netPay)
 }
 
 calculateTaxablePay(basicIncome);
@@ -265,6 +256,7 @@ nhifDeductions(basicIncome);
 calculateNhifRelief(nhifFinalDeduction);
 totalDeductionsCalculation(payeTotal, nhifRelief, personalRelief);
 finalPay(taxableIncome, totalDeductions, nhifFinalDeduction);
+
   
   
   

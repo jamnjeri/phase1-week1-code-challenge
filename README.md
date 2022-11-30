@@ -10,7 +10,7 @@ This is a solution code written to solve the Week 1 Phase1 Code Challenge
 * Then install the various packages from package.json `npm install`
 * Create environment variables
 
-**This code specifically was ran in the console due to the prompt issue on VS Code**
+**This code specifically was ran in the console one challenge at a time commenting and uncommenting respectively due to the prompt issue on VS Code**
 
 
 ## C. Project Setup
