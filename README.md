@@ -3,13 +3,15 @@
 This is a solution code written to solve the Week 1 Phase1 Code Challenge
 
 ## B. Requirements:
-1. Create a repository on your GitHub account.
-2. Use Javascript to write down the solution.
-3. Push the solution to the created repository.
-4. Submit the repository link for grading.
-5. Ensure your repository has a well written README.
+### Prerequisites
+* node v14.17.4 and above
+* npm 6.14.14 and above
+* Vue 2.6.11
+* Then install the various packages from package.json `npm install`
+* Create environment variables
 
-**NOTE: You are required to complete ALL the challenges**
+**This code specifically was ran in the console due to the prompt issue on VS Code**
+
 
 ## C. Project Setup
 
@@ -41,10 +43,19 @@ https://www.aren.co.ke/payroll/taxrates.htm       Links to an external site.
 
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
-## D. Contacts
+## D.Status:
+    maintained, and is currently in development
+
+## E.Version:
+    v0.1.0
+
+## F.Usage
+-----
+
+## G. Contacts
 Feel free to contact me at jamnjeri@gmail.com
 
 
-## E. Author & License
+## H. Author & License
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Copyright (c) 2022 **Mathu Njeri Jamila**
