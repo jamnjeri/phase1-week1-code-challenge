@@ -2,6 +2,9 @@
 
 //Challenge 1: Student Grade Generator 
 
+
+const prompt = require("prompt-sync")();
+
 //Prompt user to input student marks between 0-100 and store in studentMarks variable
 let studentMarks;
 studentMarks = parseInt(prompt ("Kindly enter student marks between 0-100: "))
@@ -13,7 +16,7 @@ if (studentMarks > 100 || studentMarks < 0 ) {
     console.log('Value entered is outside the desirable range')
 }
 //Check if value entered is within 0-100 (Desired Range)
-else if (studentMarks > 0 && studentMarks <=100) {
+else if (studentMarks >= 0 && studentMarks <=100) {
   //console.log(studentMarks + ' is within range')
 
   //Allocate grades

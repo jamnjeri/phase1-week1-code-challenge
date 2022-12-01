@@ -9,8 +9,10 @@ This is a solution code written to solve the Week 1 Phase1 Code Challenge
 * Vue 2.6.11
 * Then install the various packages from package.json `npm install`
 * Create environment variables
+* Inorder to run it in the terminal, install the prompt package `npm install prompt-sync`  and 
+* In addition, add   `const prompt = require("prompt-sync")();>`  to the beginning of your script when planning to use prompt.
 
-**This code specifically was ran in the console one challenge at a time commenting and uncommenting respectively due to the prompt issue on VS Code**
+
 
 
 ## C. Project Setup

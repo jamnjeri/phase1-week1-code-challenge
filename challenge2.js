@@ -30,4 +30,4 @@ function speedDetector(speedOfVehicle){
         }
     }
 }
-speedDetector(80)
+speedDetector(90)

@@ -14,6 +14,7 @@
   // Step 7: Calculate Total Deductions
   // Step 8: Calculate Net Salary
 
+const prompt = require("prompt-sync")();
 
 let basicIncome;
 let taxableIncome;
